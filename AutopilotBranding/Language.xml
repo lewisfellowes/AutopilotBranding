@@ -6,13 +6,24 @@
 
     <!--Display Language--> 
     <gs:MUILanguagePreferences> 
-        <gs:MUILanguage Value="es-ES" /> 
-        <gs:MUIFallback Value="en-US" /> 
+        <gs:MUILanguage Value="en-GB" /> 
+        <gs:MUIFallback Value="en-GB" /> 
     </gs:MUILanguagePreferences> 
 
     <!--User Locale-->
     <gs:UserLocale> 
-        <gs:Locale Name="es-ES" SetAsCurrent="true" ResetAllSettings="false"/>
+        <gs:Locale Name="en-GB" SetAsCurrent="true" ResetAllSettings="false"/>
     </gs:UserLocale>
+
+    <!-- System Locale -->
+    <gs:SystemLocale Name="en-GB" />
+
+    <!-- GeoID (sets location services, time zone relevance, etc.) -->
+    <gs:GeoID Value="242" />  <!-- 242 is the code for the United Kingdom -->
+
+    <!-- Input Preferences (Keyboard Layout) -->
+    <gs:InputPreferences>
+        <gs:InputLanguageID Action="add" ID="0809:00000809"/> <!-- 0809 is English (United Kingdom) -->
+    </gs:InputPreferences>
 
 </gs:GlobalizationServices>  
